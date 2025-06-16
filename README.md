@@ -1,7 +1,7 @@
 
 # Listzy 
 O Listzy é uma aplicação web de lista de tarefas (To-Do List), com suporte a **modo escuro**, e **armazenamento local**, contando com uma inteface limpa, moderna e responsiva.
-Este é meu primeiro projeto de portfólio seguindo meus estudos em JavaScript, HTML e CSS. A proposta do projeto é permitir que o usuário crie e gerencie tarefas do diárias. As tarefas podem ser adicionadas, marcadas como concluídas e removidas com facilidade. O estado é salvo automaticamente no `localStorage`, mantendo os dados mesmo após recarregar ou fechar o navegador.
+Este é meu primeiro projeto de portfólio seguindo meus estudos em JavaScript, HTML e CSS. A proposta do projeto é permitir que o usuário crie e gerencie tarefas diárias. As tarefas podem ser adicionadas, marcadas como concluídas e removidas com facilidade. O estado é salvo automaticamente no `localStorage`, mantendo os dados mesmo após recarregar ou fechar o navegador.
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -42,7 +42,7 @@ Clique no checkbox para marcar ou desmarcar a tarefa como concluída.
 - Ao recarregar a página, a lista é carregada automaticamente.
 
 
-## 📄 Como rodas o projeto
+## 📄 Como rodar o projeto
 
 1. Clone ou baixe este repositório.
 2. Abra o arquivo `index.html` no navegador.
