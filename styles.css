@@ -1,0 +1,249 @@
+:root {
+    --font-family: "Inter", sans-serif;
+    
+    --cor-txt-principal: #000000;
+    --cor-txt-secundaria: #646464;
+
+    --background-color: #FFFFFF;
+    --menu-background: #F9F9F9;
+    --cinza-secundario: #FBFBFB;
+    --cor-detalhe: #E5E5E5;
+    --cor-hover: #E5E5E5;
+    --azul-principal: #045AC7;
+    --azul-secundario: #82B6F7;
+    --branco: #FFFFFF;
+}
+
+.darkmode{
+    --cor-txt-principal: #FFFFFF;
+    --cor-txt-secundaria: #FBFBFB;
+
+    --background-color: #1E1E21;
+    --menu-background: #041528;
+    --cinza-secundario: #5D5D67;
+    --cor-detalhe: #E5E5E5;
+    --cor-hover: #5D5D67;
+    --azul-principal: #045AC7;
+    --azul-secundario: #82B6F7;
+    --branco: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--cor-txt-principal);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: left;
+    align-items: start;
+
+    height: 100vh;
+}
+
+main {
+  padding: 24px 40px;
+  display: flex;
+  width: 100%;
+}
+
+
+.menu__superior-icones {
+  position: absolute;
+  right: 16px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.theme-switch {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--cor-detalhe);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme-switch img:last-child {
+  display: none;
+}
+
+.darkmode .theme-switch img:first-child {
+  display: none;
+}
+
+.darkmode .theme-switch img:last-child {
+  display: block;
+}
+
+.tarefas {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tarefas-titulo {
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.tarefas-input {
+  margin: 24px 0 40px 0;
+  padding: 0.6rem 7rem 0.6rem 3rem;
+  color: var(--cor-txt-secundaria);
+  font-family: var(--font-family);
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--cor-detalhe);
+  background-color: var(--cinza-secundario);
+  background-image: url('./img/plus.svg');
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  box-sizing: border-box;
+}
+
+.tarefas-input::placeholder{
+  color: var(--cor-txt-secundaria);
+}
+
+.btn-adicionar {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 42%;
+  transform: translateY(-50%);
+  background-color: var(--azul-principal);
+  color: var(--branco);
+  font-family: var(--font-family);
+  font-size: 10px;
+  font-weight: 500;
+  border: none;
+  border-radius: 16px;
+  padding: 0.4em 1em;
+  cursor: pointer;
+}
+
+
+.tarefas-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.tarefa-nome {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tarefas-criadas {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li.checked {
+  color: var(--cor-txt-secundaria);
+  text-decoration: line-through;
+}
+
+.tarefa-linha-divisoria {
+  margin-left: 2.6rem;
+  border: 1px solid var(--cor-detalhe);
+}
+.tarefas-criadas {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.remove-button {
+  position: absolute;
+  right: 4.5em;
+  font-size: 22px;
+  color: var(--cor-txt-principal);
+  line-height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.remove-button:hover{
+  background: var(--cor-hover);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    padding: 24px 20px;
+  }
+
+  .tarefas{
+    padding: 0;
+  }
+
+    .menu__superior-icones img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-switch {
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu__superior-icones {
+    gap: 16px;
+    right: 8px;
+  }
+
+  .tarefas-titulo {
+  font-size: 20px;
+}
+
+  .tarefas-input {
+    padding: 0.3rem 5rem 0.3rem 3rem;
+    font-size: 9px;
+    width: 100%;
+  }
+
+  .btn-adicionar {
+  right: 16px;
+  top: 42%;
+  font-size: 8px;
+  font-weight: 300;
+  padding: 0.3em 0.5em;
+}
+
+  .tarefa-nome{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .remove-button {
+    right: 1.5em;
+    font-size: 20px;
+    color: var(--cor-txt-principal);
+    line-height: 40px;
+    text-align: center;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,78 @@
+aside{
+    background-color: var(--menu-background);
+    height: 100vh;
+    text-align: left;
+    border-right: 1px solid var(--cor-detalhe);
+}
+
+.logo {
+  padding: 16px;
+}
+
+.sessao-titulo {
+    font-family: var(--font-family);
+    color: var(--cor-txt-principal);
+    font-size: 14px;
+    padding: 25px 162px 13px 34px;
+}
+
+.listas {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-left: 16px;
+  padding-right: 42px;
+  list-style-type: none;
+}
+
+.lista-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  padding: 12px;
+  font-family: var(--font-family);
+}
+
+.label {
+  text-decoration: none;
+  color: var(--cor-txt-principal);
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.linha-divisao {
+  border: none;
+  border-top: 1px solid var(--cor-detalhe);
+  margin: 32px 0;
+  margin-inline: 16px;
+}
+
+
+.active {
+  background-color: var(--azul-secundario);
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 700px) {
+  aside {
+    max-width: 7rem;
+  }
+
+  .logo{
+    width: 60%;
+  }
+
+  .sessao-titulo{
+    font-size: 10px;
+  }
+
+  .lista-item{
+    padding: 8px;
+  }
+
+  .label{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listzy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles/menu.css">
+</head>
+<body class="">
+  <aside>
+    <img src="./img/logo.svg" alt="logo listzy" class="logo" id="logo">
+    <nav>
+      <h2 class="sessao-titulo">Tarefas</h2>
+      <ul class="listas">
+        <li class="lista-item active">
+          <a href="#" class="label">A fazer</a>
+        </li>
+      </ul>
+
+      <hr class="linha-divisao">
+    </nav>
+  </aside>
+ 
+  <main>
+    <section class="menu__superior">
+      <div class="menu__superior-icones">
+        <button class="theme-switch" id="theme-switch">
+          <img src="./img/dark_mode_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
+          <img src="./img/light_mode_24dp_1F1F1F_FILL1_wght400_GRAD0_opsz24.svg">
+        </button>
+        <img src="./img/usuario.svg" alt="perfil do usuário">
+      </div>
+    </section>
+
+    <section class="tarefas">
+      <h2 class="tarefas-titulo">A fazer</h2>
+      <div class="input-wrapper">
+        <input type="text" id="input-tarefa" placeholder="Crie uma nova tarefa" class="tarefas-input" data-ls-module="chartCounter" maxlength="20" required/>
+        <button type="button" class="btn-adicionar">adicionar</button>
+      </div>
+      <ul class="tarefas-criadas"></ul>
+    </section>
+    
+  </main>
+
+  <script src="scripts.js"></script>
+  <script src="./scripts/darkmode.js"></script>
+</body>
+</html> 
